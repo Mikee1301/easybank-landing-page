@@ -150,3 +150,44 @@ article img{
   padding: 1rem;
   line-height: 1.5rem;
 }
+/* -------------Footer------------- */
+footer{
+  background-color: var(--dark-blue);
+  color: var(--neutral-white);
+  text-align: center;
+}
+footer .logo{
+  margin: 2rem 0;
+
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.social-icons li{
+  margin-right: .75rem;
+}
+.social-icons img{
+  width: 25px;
+}
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  list-style: none;
+}
+.footer-links li{
+  padding: .25rem;
+  
+}
+.footer-links a{
+  color: var(--very-light-gray);
+  text-decoration: none;
+  font-size: .90rem;
+}
+footer .copyright{
+  color: var(--very-light-gray);
+}
