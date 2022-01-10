@@ -33,6 +33,7 @@ nav{
   z-index: 2;
 
 }
+/* -------------------Header---------------- */
 header{
   width: 100%;
   z-index: 0;
@@ -93,4 +94,32 @@ header .tagline{
   border: none;
   border-radius: 20px;
   padding: .75rem;
+  margin-bottom: 2.5rem;
+}
+
+/* -------------------Main---------------- */
+main{
+  background-color: var(--light-grayish);
+  padding: 2rem;
+  text-align: center;
+  font-size: .90rem;
+}
+.services-main-title{
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1.5rem;
+}
+.services-main-desc{
+  line-height: 1.5rem;
+}
+
+/* Service Cards */
+.service-cards{ 
+  margin-top: 2.5rem;
+}
+.service-card img{
+  padding: 1rem;
+}
+.card-title{
+  margin-bottom: 1rem;
 }
