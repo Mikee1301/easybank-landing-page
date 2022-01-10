@@ -123,3 +123,30 @@ main{
 .card-title{
   margin-bottom: 1rem;
 }
+/* -------------Articles------------- */
+.articles{
+  text-align: left;
+  margin-top: 8rem;
+}
+.articles > h2{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1.5rem;
+}
+article img{
+  width: 100%;
+  border-radius: 10px;
+}
+.article-author{
+  padding: 1rem;
+}
+.article-title{
+  font-size: 1rem;
+  font-weight: 450;
+  padding: 0 1rem;
+}
+.article-desc{
+  padding: 1rem;
+  line-height: 1.5rem;
+}
