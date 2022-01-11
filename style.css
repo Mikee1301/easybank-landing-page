@@ -17,6 +17,7 @@
   box-sizing: border-box;
 }
 body{
+  position: relative;
   font-family: 'Public Sans', sans-serif;
   font-size: 18px;
   
@@ -32,6 +33,33 @@ nav{
   padding: 1.2rem;
   z-index: 2;
 
+}
+/* -------------------Mobile Navigation---------------- */
+.mobile-nav{
+  display: none;
+
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  /* margin: -100px 0 0 -150px; */
+  
+  width: 90%;
+  margin: auto;
+  background-color: var(--neutral-white);
+  border-radius: 5px;
+  z-index: 3;
+  text-align: center;
+  padding: 1.5rem;
+}
+.mobile-nav ul{
+  list-style: none;
+}
+.mobile-nav ul li{
+  padding: .5rem;
+}
+.mobile-nav ul li a{
+  text-decoration: none;
+  color: #000;
 }
 /* -------------------Header---------------- */
 header{

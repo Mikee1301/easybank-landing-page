@@ -16,10 +16,19 @@
     <ul class="nav-links">
       
     </ul>
-    <div class="humbuger-icon">
-      <img src="/img/icon-hamburger.svg" alt="">
+    <div class="humbuger-icon" id="humbuger">
+      <img id="humbuger-img" src="/img/icon-hamburger.svg" alt="">
     </div>
   </nav>
+  <div class="mobile-nav" id="m-nav">
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">Blog</a></li>
+       <li><a href="#">Carrers</a></li>
+     </ul>
+  </div>
   <header>
     <div class="hero-image">
       <img class="hero-bg" src="/img/bg-intro-mobile.svg" alt="">
@@ -137,5 +146,22 @@
       </di>
       <p class="copyright"> &copy;Easybank. All Rights Reserved</p>
     </footer> 
+<script>
+  let humbuger = document.getElementById("humbuger");
+  let hum_img = document.getElementById("humbuger-img");
+   let mobile_nav = document.getElementById("m-nav")
+  humbuger.addEventListener("click", openHumbuger);
+
+  function openHumbuger() {
+    if(mobile_nav.style.display == 'block'){
+      hum_img.src="img/icon-hamburger.svg";
+      mobile_nav.style.display = 'none'    
+    }else{
+      hum_img.src="img/icon-close.svg";
+      mobile_nav.style.display = 'block'
+    }
+    
+  }
+</script>
 </body>
 </html>
