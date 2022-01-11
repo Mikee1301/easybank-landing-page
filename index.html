@@ -9,6 +9,16 @@
   <title>Easybank</title>
 </head>
 <body>
+  <div class="mobile-nav" id="m-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Carrers</a></li>
+    </ul>
+ </div>
+
   <nav>
     <div class="logo">
       <img src="/img/logo.svg" alt="">
@@ -20,15 +30,7 @@
       <img id="humbuger-img" src="/img/icon-hamburger.svg" alt="">
     </div>
   </nav>
-  <div class="mobile-nav" id="m-nav">
-     <ul>
-       <li><a href="#">Home</a></li>
-       <li><a href="#">About</a></li>
-       <li><a href="#">Contact</a></li>
-       <li><a href="#">Blog</a></li>
-       <li><a href="#">Carrers</a></li>
-     </ul>
-  </div>
+<div class="main-container">
   <header>
     <div class="hero-image">
       <img class="hero-bg" src="/img/bg-intro-mobile.svg" alt="">
@@ -146,19 +148,24 @@
       </di>
       <p class="copyright"> &copy;Easybank. All Rights Reserved</p>
     </footer> 
+</div>    
 <script>
   let humbuger = document.getElementById("humbuger");
   let hum_img = document.getElementById("humbuger-img");
+  let container = document.getElementsByClassName('main-container')
    let mobile_nav = document.getElementById("m-nav")
   humbuger.addEventListener("click", openHumbuger);
 
   function openHumbuger() {
-    if(mobile_nav.style.display == 'block'){
-      hum_img.src="img/icon-hamburger.svg";
-      mobile_nav.style.display = 'none'    
+    if(mobile_nav.classList.contains("showMenu")){
+      mobile_nav.classList.remove("showMenu");
+      hum_img.src="img/icon-hamburger.svg"; 
+      container[0].classList.remove("showMenuEffect")
     }else{
+      mobile_nav.classList.add("showMenu");
       hum_img.src="img/icon-close.svg";
-      mobile_nav.style.display = 'block'
+      container[0].classList.add("showMenuEffect")
+  
     }
     
   }

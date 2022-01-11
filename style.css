@@ -23,7 +23,7 @@ body{
   
 }
 nav{
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: space-between;
 
@@ -36,10 +36,10 @@ nav{
 }
 /* -------------------Mobile Navigation---------------- */
 .mobile-nav{
-  display: none;
+  /* display: none; */
 
-  position: absolute;
-  top: 2%;
+  position: fixed;
+  top: 15%;
   left: 5%;
   /* margin: -100px 0 0 -150px; */
   
@@ -50,7 +50,18 @@ nav{
   z-index: 3;
   text-align: center;
   padding: 1.5rem;
+
+  transform: translateY(-150%);
+  transition: transform .5s;
 }
+.showMenu {
+  transform: translateY(0);
+}
+.showMenuEffect{
+  filter:blur(1px);
+
+}
+
 .mobile-nav ul{
   list-style: none;
 }
