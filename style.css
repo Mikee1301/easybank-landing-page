@@ -58,7 +58,7 @@ nav{
   transform: translateY(0);
 }
 .showMenuEffect{
-  filter:blur(1px);
+  filter:blur(2px);
 
 }
 
@@ -142,6 +142,7 @@ main{
   padding: 2rem;
   text-align: center;
   font-size: .90rem;
+  
 }
 .services-main-title{
   font-size: 2rem;
@@ -150,11 +151,14 @@ main{
 }
 .services-main-desc{
   line-height: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Service Cards */
 .service-cards{ 
   margin-top: 2.5rem;
+  text-align: center;
 }
 .service-card img{
   padding: 1rem;
@@ -162,9 +166,13 @@ main{
 .card-title{
   margin-bottom: 1rem;
 }
+.card-desc{
+  max-width: 600px;
+  margin:  0 auto;
+}
 /* -------------Articles------------- */
 .articles{
-  text-align: left;
+  text-align: center;
   margin-top: 8rem;
 }
 .articles > h2{
@@ -175,10 +183,12 @@ main{
 }
 article img{
   width: 100%;
+  max-width: 600px;
   border-radius: 10px;
 }
 .article-author{
   padding: 1rem;
+  text-align: center;
 }
 .article-title{
   font-size: 1rem;
@@ -188,6 +198,8 @@ article img{
 .article-desc{
   padding: 1rem;
   line-height: 1.5rem;
+  max-width: 600px;
+  margin:  0 auto;
 }
 /* -------------Footer------------- */
 footer{
@@ -229,4 +241,55 @@ footer .logo{
 }
 footer .copyright{
   color: var(--very-light-gray);
+}
+
+
+/* --------------------Media queries----------------- */
+@media only screen and (min-width: 800px) {
+
+  header .tagline{
+    top: 0;
+  }
+  .header-description{
+    margin-top: 1rem;
+  }
+  .header-description{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .request-invite-btn{
+    width: 230px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+  }
+  .service-card img{
+    width: 120px;
+  }
+  .services-main-desc{
+    font-size: 1rem;
+  }
+  .card-title{
+    font-size: 1.3rem;
+  }
+  .card-desc{
+    font-size: 1rem;
+  }
+  .articles h2{
+    font-size: 2rem;
+  }
+  .article-author{
+    font-size: .7rem;
+  }
+  .article-title{
+    font-size: 1.3rem;
+  }
+  .article-desc{
+    font-size: 1rem;
+  }
+  .footer-links a{
+    font-size: 1rem;
+  }
 }
